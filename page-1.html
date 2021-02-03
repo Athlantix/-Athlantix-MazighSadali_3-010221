@@ -9,28 +9,29 @@
 </head>
 
 	<body>
-		<header>
-			<div>
+		<header class=header>
+			<div class="header__flex">
 				<i class="fas fa-arrow-left"></i>
 
-				<img src="logo/ohmyfood.png" alt="logo">
+				<img class="header__logo" src="logo/ohmyfood.png" alt="logo">
 			</div>
 			<img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurants">
 		</header>
 		
-		<section id="menu">
-			<h1>La palette du goût</h1>
-			<p>Entrées</p>
-				<div class="menu-type">
+		<section class="menu">
+			<h1 class="menu__restau-titre">La palette du goût</h1>
+			<div class="menu__repas">
+				<p>Entrées</p>
+				<div class="menu__vignette">
 					<p>Fricassée d'escargot</p>
-					<div class="menu-flex">
+					<div class="menu__vignette--flex">
 						<p>Au piment d'Espelette </p>
 						<p>25€</p>
 						<div></div>
 					</div>
 				</div>
-
-				<div class="menu-type">
+			
+				<div class="menu__repas">
 					<p>Foie gras de canard mi-cuit</p>
 					<div class="menu-flex">
 						<p>Et ses copeaux de truffe noire</p>
@@ -47,8 +48,9 @@
 						<div></div>
 					</div>
 				</div>
+			</div>
 
-
+			<div class="menu__repas">
 			<p>Plats</p>
 				<div class="menu-type">
 					<p>Filet de boeuf aux herbes</p>
@@ -77,8 +79,8 @@
 					</div>
 				</div>
 
-
-
+			</div>
+			<div class="menu__repas">
 			<p>Desserts</p>
 				<div class="menu-type">
 					<p>Paris-Brest</p>
@@ -106,6 +108,7 @@
 						<div></div>
 					</div>
 				</div>
+			</div>
 		</section>
 
 			<button>Commander</button>
