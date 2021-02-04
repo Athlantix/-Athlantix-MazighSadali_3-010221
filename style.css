@@ -1,10 +1,140 @@
 body {
   font-family: Roboto, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn, .intro__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 7px #b6b6b6;
+  height: 40px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 30px;
+  margin: auto;
+  padding: 5px;
+}
+.btn a, .intro__btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.titre {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.titre-vignette {
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 7px #b6b6b6;
+  background-color: white;
+  position: relative;
+}
+.header__logo {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+.intro__localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+.intro__localisation p {
+  margin-left: 20px;
+}
+.intro__presentation {
+  width: 90%;
+  margin: auto;
+}
+.intro__presentation .intro__titre {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.intro__presentation .intro__decouvrez {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.intro__btn {
+  width: 200px;
+}
+
+.fonctionnement {
+  width: 90%;
+  margin: auto;
+}
+.fonctionnement__consigne {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+.fonctionnement__consigne .consigne__cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  margin-right: -20px;
+  z-index: 2;
+  margin-top: 35px;
+}
+.fonctionnement .consigne__flex {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0px 4px 7px #b6b6b6;
+  margin: 10px;
+}
+.fonctionnement .consigne__flex i {
+  color: grey;
+}
+.fonctionnement .consigne__flex i, .fonctionnement .consigne__flex p {
+  margin-left: 25px;
+}
+
+.restaurant {
+  width: 100%;
+}
+.restaurant__titre {
+  width: 90%;
+  margin: auto;
+}
+.restaurant__container {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 4px 7px #b6b6b6;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.restaurant__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

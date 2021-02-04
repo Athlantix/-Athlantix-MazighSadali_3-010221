@@ -1,11 +1,149 @@
 @import "variable.scss";
+@import "mixin.scss";
+
+
 body{
 	font-family: Roboto, sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 
 
 
+.btn{
+	@include centrer;
+	@include ombre;
+	height: 40px;
+	background: linear-gradient(0.47turn,$secondaire,$primaire);
+	border-radius: 30px;
+	margin: auto;
+	padding:5px;
+	a{
+		text-decoration: none;
+		color: white;
+		
+	}
+}
+
+.titre{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.titre-vignette{
+	font-size: 17px;
+	font-weight: 600;
+
+}
+
 .header{
-	display: flex;
-	justify-content: center;
+	@include centrer;
+	@include ombre;
+	background-color: white;
+	position:relative;
+	&__logo{
+		width:250px;
+		height:auto;
+		padding: 10px;
+	}
+}
+.intro{
+	width: 100%;
+	text-align: center;
+	background-color: $fond;
+	padding-bottom: 50px;
+
+	&__localisation{
+		@include centrer;
+		background-color: darken($fond,7);
+		
+		p{
+			margin-left: 20px;
+		}
+	}
+	
+	&__presentation{
+		@include centrer-bloc;
+
+		.intro__titre{
+			padding-top: 20px;
+			font-size: 25px;
+			font-weight: 600;
+		}
+		.intro__decouvrez{
+			font-size: 16px;
+			padding-bottom:10px; 
+		}
+	}
+	&__btn {
+		@extend .btn;
+		width: 200px;
+	}
+	
+}
+
+
+
+.fonctionnement{
+	@include centrer-bloc;
+	&__consigne{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		margin-bottom: 40px;;
+
+		.consigne__cercle{
+			@include centrer;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: $primaire;
+			color: white;
+			margin-right: -20px;
+			z-index: 2;
+			margin-top: 35px;
+			
+		}
+	}
+
+	.consigne__flex{
+		display: flex;
+		align-items: center;
+		width: 85%;
+		padding: 10px;
+		background-color: $fond;
+		border-radius: 20px;
+		@include ombre;
+		margin:10px;
+		
+		i{
+			color: grey;
+		}
+		i,p{
+			margin-left: 25px;
+		}
+	}
+
+}
+
+.restaurant{
+	width: 100%;
+	&__titre{
+		@include centrer-bloc;
+	}
+	&__container{
+		@include centrer-bloc;
+		@include ombre;
+		margin-top: 20px;
+		border-radius: 20px;
+
+		
+	}
+	&__img{
+		width:100%;
+		height:auto;
+		object-fit: cover;
+		border-radius: 20px 20px 0px 0px;
+	}
+	
 }
