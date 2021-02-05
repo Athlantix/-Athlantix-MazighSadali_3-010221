@@ -6,8 +6,13 @@ body{
 	font-family: Roboto, sans-serif;
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
 }
 
+
+.logo{
+	font-family: 'Shrikhand', cursive;
+}
 
 
 .btn{
@@ -37,14 +42,13 @@ body{
 }
 
 .header{
-	@include centrer;
 	@include ombre;
 	background-color: white;
-	position:relative;
+	position: relative;
 	&__logo{
-		width:250px;
-		height:auto;
-		padding: 10px;
+		text-align: center;
+		font-size: 45px;
+		margin: 0px;
 	}
 }
 .intro{
@@ -128,6 +132,8 @@ body{
 
 .restaurant{
 	width: 100%;
+	background-color: $fond;
+	padding: 30px 0px 30px 0px;
 	&__titre{
 		@include centrer-bloc;
 	}
@@ -136,14 +142,120 @@ body{
 		@include ombre;
 		margin-top: 20px;
 		border-radius: 20px;
+		position: relative;
+	
+	}
+	&__nouveau{
+		font-weight: bold;
+		padding: 7px;
+		border-radius: 5px;
+		position: absolute;
+		top: 0;
+		right: 10px;
+		color: rgb(40, 116, 40);
+		background-color:rgb(168, 240, 174) ;
+	}
 
-		
+	
+	&__legende{
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 15px 15px 15px ;
+	}
+	.fa-heart{
+		font-size:30px;
+		margin-top: 15px;
 	}
 	&__img{
 		width:100%;
-		height:auto;
+		height:200px;
 		object-fit: cover;
 		border-radius: 20px 20px 0px 0px;
 	}
 	
+}
+
+footer{
+	background-color: rgb(63, 63, 63);
+	color: white;
+	padding: 20px;
+	width: 100%;
+	.footer__info-flex{
+		display: flex;
+		align-items: center;
+		p{
+			margin-left: 10px;
+		}
+	}
+}
+
+
+
+/* Pages 1,2,3,4---------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------*/
+
+.header__flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	i{
+		position: absolute;
+		top: 20px;
+		left:10px;
+		font-size: 20px;
+
+	}
+}
+.image-fond{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	margin-bottom: -50px;
+	position: relative;
+	z-index: 0;
+}
+
+.menu{
+	position: relative;
+	z-index: 1;
+	padding: 20px;
+	background-color: $fond;
+	border-radius: 20px;
+	&__resto-titre{
+		font-family: 'Shrikhand', cursive;
+	}
+
+	&__titre--ligne{
+		margin-top: 40px;
+		padding-bottom:10px;
+		border-bottom: $tertiaire 2px solid;
+		width: 50px;
+
+	}
+	&__vignette{
+		background-color: white;
+		border-radius: 15px;
+		line-height: 2px;
+		padding: 5px;
+		margin-bottom: 20px;
+		@include ombre;
+
+		p{
+			margin-left: 5px;
+		}
+
+	}
+	&__vignette--flex{
+		display: flex;
+		justify-content: space-between;
+		:first-child{
+			width: 80%;
+		}
+	}
+	
+}
+
+.page__bouton{
+	margin-top: 50px;
+	margin-bottom: 50px;
 }

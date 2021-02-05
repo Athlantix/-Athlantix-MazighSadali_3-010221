@@ -5,124 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ohmyfood</title>
   <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 	<body>
-		<header>
-			<div>
+		<header class=header>
+			<div class="header__flex">
 				<i class="fas fa-arrow-left"></i>
 
-				<img src="logo/ohmyfood.png" alt="logo">
+				<p class="header__logo logo">ohmyfood</p>
 			</div>
-			<img src="restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurants">
 		</header>
+		<img class="image-fond" src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurants">
 		
-		<section id="menu">
-			<h1>Le délice des sens</h1>
-			<p>Entrées</p>
-				<div class="menu-type">
-					<p>Tartare de thon</p>
-					<div class="menu-flex">
-						<p>Assaisonné au yuzu </p>
+		<section class="menu">
+			<h1 class="menu__resto-titre">La palette du goût</h1>
+			<div class="menu__repas">
+				<p class="menu__titre--ligne">ENTRÉES</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Fricassée d'escargot</p>
+					<div class="menu__vignette--flex">
+						<p>Au piment d'Espelette </p>
 						<p>25€</p>
 						<div></div>
 					</div>
 				</div>
-
-				<div class="menu-type">
-					<p>Bouchée de homard croustillant</p>
-					<div class="menu-flex">
-						<p>Et sa farandole de petits légumes</p>
+			
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Foie gras de canard mi-cuit</p>
+					<div class="menu__vignette--flex">
+						<p>Et ses copeaux de truffe noire</p>
 						<p>35€</p>
 						<div></div>
 					</div>
 				</div>
 
-				<div class="menu-type">
-					<p>Velouté de cèpes </p>
-					<div class="menu-flex">
-						<p>Aux truffes</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Oeuf au plat</p>
+					<div class="menu__vignette--flex">
+						<p>Assaisonné à la truffe sur lit de caviar</p>
 						<p>20€</p>
 						<div></div>
 					</div>
 				</div>
+			</div>
 
-
-			<p>Plats</p>
-				<div class="menu-type">
-					<p>Poulet rôti aux herbes de Provence</p>
-					<div class="menu-flex">
-						<p>Et sa crème de truffe</p>
+			<div class="menu__repas">
+			<p class="menu__titre--ligne">PLATS</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Filet de boeuf aux herbes</p>
+					<div class="menu__vignette--flex">
+						<p>Accompagné de sa ribambelle de légumes</p>
 						<p>40€</p>
 						<div></div>
 					</div>
 				</div>
 
-				<div class="menu-type">
-					<p>Langouste rôtie</p>
-					<div class="menu-flex">
-						<p>Et ses légumes de saison</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Parmentier de queue de boeuf</p>
+					<div class="menu__vignette--flex">
+						<p>À la truffe noire sur sa purée de panais</p>
 						<p>35€</p>
 						<div></div>
 					</div>
 				</div>
 
-				<div class="menu-type">
-					<p>Côte de boeuf Angus </p>
-					<div class="menu-flex">
-						<p>Et sa purée de panais</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Filet de turbot</p>
+					<div class="menu__vignette--flex">
+						<p>Aux agrumes</p>
 						<p>44€</p>
 						<div></div>
 					</div>
 				</div>
 
-
-
-			<p>Desserts</p>
-				<div class="menu-type">
-					<p>Farandole de desserts</p>
-					<div class="menu-flex">
-						<p>Du chef</p>
+			</div>
+			<div class="menu__repas">
+			<p class="menu__titre--ligne">DESSERTS</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Paris-Brest</p>
+					<div class="menu__vignette--flex">
+						<p>Revisité</p>
 						<p>18€</p>
 						<div></div>
 					</div>
 				</div>
 
-				<div class="menu-type">
-					<p>Crème brulée </p>
-					<div class="menu-flex">
-						<p>Revisitée</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Macaron au chocolat d'exception</p>
+					<div class="menu__vignette--flex">
+						<p>Et glace à la vanille de Madagascar</p>
 						<p>22€</p>
 						<div></div>
 					</div>
 				</div>
 
-				<div class="menu-type">
-					<p>Tiramisu </p>
-					<div class="menu-flex">
-						<p>À la noisette</p>
+				<div class="menu__vignette">
+					<p class="menu__titre titre-vignette">Mousse au chocolat</p>
+					<div class="menu__vignette--flex">
+						<p>Au piment d'Espelette et à la truffe noire</p>
 						<p>23€</p>
 						<div></div>
 					</div>
 				</div>
+			</div>
+			<div class="intro__btn page__bouton btn"><a href="#">commander</a></div>
 		</section>
 
-			<button>Commander</button>
+		
 
-		<footer>
-				<img src="logo/ohmyfood.png" alt="logo">
-					<div>
+			<footer class="footer">
+				<p class="footer__logo logo">ohmyfood</p>
+					<div class="footer__info-flex">
 						<i class="fas fa-utensils"></i>
 						<p>Proposer un restaurant</p>
 					</div>
-					<div>
+					<div class="footer__info-flex">
 						<i class="fas fa-hands-helping"></i>
 						<p>Devenir partenaire</p>
 					</div>
 				<p>Mentions légales</p>
 				<p>Contact</p>
 
-		</footer>
+			</footer>
 	</body>
 </html>
