@@ -3,7 +3,7 @@
 
 
 body{
-	font-family: Roboto, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -75,8 +75,10 @@ body{
 			font-weight: 600;
 		}
 		.intro__decouvrez{
-			font-size: 16px;
+			font-size: 18px;
 			padding-bottom:10px; 
+			font-weight: 100;
+			color: rgb(92, 92, 92);
 		}
 	}
 	&__btn {
@@ -94,7 +96,7 @@ body{
 		width: 100%;
 		margin: auto;
 		display: flex;
-		margin-bottom: 40px;;
+		margin-bottom: 40px;
 
 		.consigne__cercle{
 			@include centrer;
@@ -110,9 +112,9 @@ body{
 		}
 	}
 
+
 	.consigne__flex{
-		display: flex;
-		align-items: center;
+		@include flex-align;
 		width: 85%;
 		padding: 10px;
 		background-color: $fond;
@@ -127,6 +129,12 @@ body{
 			margin-left: 25px;
 		}
 	}
+	.consigne__flex:hover{
+		background-color: rgb(234, 255, 249);
+		i{
+			color: $primaire;
+		}
+	} 
 
 }
 
@@ -203,8 +211,7 @@ footer{
 
 
 .header__flex{
-	display: flex;
-	align-items: center;
+	@include flex-align;
 	justify-content: center;
 	i{
 		position: absolute;
@@ -236,8 +243,7 @@ footer{
 	}
 
 	&__titre-coeur{
-		display: flex;
-		align-items: center;
+		@include flex-align;
 		justify-content: space-between;
 	}
 
