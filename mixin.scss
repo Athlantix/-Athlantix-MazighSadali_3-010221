@@ -4,4 +4,9 @@
     align-items: center;
 }
 
+@mixin media{
+@media screen and (min-width:700px) and(max-width:2000px){
+	@content;
+	}
+}
 

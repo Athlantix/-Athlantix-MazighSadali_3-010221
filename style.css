@@ -88,11 +88,21 @@ body {
   width: 200px;
 }
 
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .fonctionnement__titre {
+    text-align: center;
+  }
+}
 .fonctionnement__consigne {
   width: 100%;
   margin: auto;
   display: flex;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .fonctionnement__consigne {
+    width: 70%;
+  }
 }
 .fonctionnement__consigne .consigne__cercle {
   display: flex;
@@ -132,9 +142,26 @@ body {
   background-color: #f7f7f7;
   padding: 30px 0px 30px 0px;
 }
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .restaurant a {
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .restaurant a {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .restaurant__titre {
+    text-align: center;
+  }
 }
 .restaurant__container {
   margin-top: 20px;
@@ -214,6 +241,12 @@ footer .footer__info-flex p {
 .menu__resto-titre {
   font-family: "Shrikhand", cursive;
 }
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .menu__resto-titre {
+    text-align: center;
+    width: 100%;
+  }
+}
 .menu__titre-coeur {
   justify-content: space-between;
 }
@@ -223,12 +256,27 @@ footer .footer__info-flex p {
   border-bottom: #99E2D0 2px solid;
   width: 50px;
 }
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .menu__titre--ligne {
+    text-align: center;
+    width: 100%;
+    border-bottom: 10 px solid black;
+  }
+}
 .menu__vignette {
   background-color: white;
   border-radius: 15px;
   line-height: 2px;
   padding: 5px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  .menu__vignette {
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .menu__vignette p {
   margin-left: 5px;
@@ -245,5 +293,7 @@ footer .footer__info-flex p {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* version site web---------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
