@@ -1,19 +1,7 @@
-@mixin flex-align{
-    display: flex;
-	align-items: center;
-}
 @mixin centrer {
 	display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin centrer-bloc{
-    width: 90%;
-    margin: auto;
-}
-
-@mixin ombre {
-    box-shadow: 0px 4px 7px rgb(182, 182, 182);
-}
 

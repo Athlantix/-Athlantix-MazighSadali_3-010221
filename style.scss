@@ -1,5 +1,6 @@
 @import "variable.scss";
 @import "mixin.scss";
+@import "placeholder.scss";
 
 
 body{
@@ -17,7 +18,7 @@ body{
 
 .btn{
 	@include centrer;
-	@include ombre;
+	@extend %ombre;
 	height: 40px;
 	background: linear-gradient(0.47turn,$secondaire,$primaire);
 	border-radius: 30px;
@@ -42,7 +43,7 @@ body{
 }
 
 .header{
-	@include ombre;
+	@extend %ombre;
 	background-color: white;
 	position: relative;
 	&__logo{
@@ -67,7 +68,7 @@ body{
 	}
 	
 	&__presentation{
-		@include centrer-bloc;
+		@extend %centrer-bloc;
 
 		.intro__titre{
 			padding-top: 20px;
@@ -91,7 +92,7 @@ body{
 
 
 .fonctionnement{
-	@include centrer-bloc;
+	@extend %centrer-bloc;
 	&__consigne{
 		width: 100%;
 		margin: auto;
@@ -114,12 +115,12 @@ body{
 
 
 	.consigne__flex{
-		@include flex-align;
+		@extend %flex-align;
 		width: 85%;
 		padding: 10px;
 		background-color: $fond;
 		border-radius: 20px;
-		@include ombre;
+		@extend %ombre;
 		margin:10px;
 		
 		i{
@@ -148,11 +149,11 @@ body{
 		color: black;
 	}
 	&__titre{
-		@include centrer-bloc;
+		@extend %centrer-bloc;
 	}
 	&__container{
-		@include centrer-bloc;
-		@include ombre;
+		@extend %centrer-bloc;
+		@extend %ombre;
 		margin-top: 20px;
 		border-radius: 20px;
 		position: relative;
@@ -212,7 +213,7 @@ footer{
 
 
 .header__flex{
-	@include flex-align;
+	@extend %flex-align;
 	justify-content: center;
 	i{
 		position: absolute;
@@ -244,7 +245,7 @@ footer{
 	}
 
 	&__titre-coeur{
-		@include flex-align;
+		@extend %flex-align;
 		justify-content: space-between;
 	}
 
@@ -261,7 +262,7 @@ footer{
 		line-height: 2px;
 		padding: 5px;
 		margin-bottom: 20px;
-		@include ombre;
+		@extend %ombre;
 
 		p{
 			margin-left: 5px;
