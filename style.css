@@ -201,6 +201,12 @@ footer {
   padding: 20px;
   width: 100%;
 }
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 footer .footer__info-flex {
   display: flex;
   align-items: center;
