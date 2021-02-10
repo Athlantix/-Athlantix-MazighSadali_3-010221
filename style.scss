@@ -24,12 +24,21 @@ body{
 	border-radius: 30px;
 	margin: auto;
 	padding:5px;
+	transition: box-shadow 100ms linear;
+	&:hover{
+		box-shadow: 0px 10px 7px rgb(182, 182, 182);
+		background: linear-gradient(0.47turn,lighten($secondaire,5%),lighten($primaire,5%)); ;
+		
+}
+
 	a{
 		text-decoration: none;
 		color: white;
 		
 	}
 }
+
+
 
 .titre{
 	font-size: 20px;

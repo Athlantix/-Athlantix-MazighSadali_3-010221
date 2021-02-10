@@ -32,6 +32,11 @@ body {
   border-radius: 30px;
   margin: auto;
   padding: 5px;
+  transition: box-shadow 100ms linear;
+}
+.btn:hover, .intro__btn:hover {
+  box-shadow: 0px 10px 7px #b6b6b6;
+  background: linear-gradient(0.47turn, #ff93e1, #a16be0);
 }
 .btn a, .intro__btn a {
   text-decoration: none;
