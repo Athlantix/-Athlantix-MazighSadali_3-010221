@@ -46,7 +46,7 @@ body{
 }
 
 .titre-vignette{
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 600;
 
 }
@@ -237,7 +237,7 @@ body{
 		position: relative;
 		width: 20px;
 		height: 12px;
-		background:linear-gradient(0.47turn,$secondaire,$primaire);
+		background:linear-gradient(0.85turn,$primaire,$secondaire);
 		border-radius: 10px 10px 0px 0px;
 		transform:rotate(45deg);
 		left: 14px;
@@ -315,7 +315,7 @@ footer{
 	position: relative;
 	width: 20px;
 	height: 12px;
-	background:linear-gradient(0.47turn,$secondaire,$primaire);
+	background:linear-gradient(0.37turn,$secondaire,$primaire);
 	border-radius: 10px 10px 0px 0px;
 	transform:rotate(45deg);
 	left: 14px;
@@ -360,7 +360,7 @@ footer{
 
 	&__repas{
 		animation:apparition 1s linear;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	&__resto-titre{
@@ -406,7 +406,7 @@ footer{
 		  position: relative;	  
 		  top:-12px;
 		  margin-bottom:-50px;
-		background-color:green ;
+		background-color:$tertiaire ;
 		i{
 			margin-top:35px;
 			margin-left: 25px;
@@ -418,7 +418,7 @@ footer{
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			color: green;
+			color:$tertiaire;
 		}
 	}
 
