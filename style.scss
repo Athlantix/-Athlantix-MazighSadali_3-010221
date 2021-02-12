@@ -213,7 +213,70 @@ body{
 		font-size:30px;
 		margin-top: 15px;
 	}
-	
+	.animation__coeur:hover .coeur{
+		opacity: 1;
+	.animation__coeur:hover .coeur{
+		opacity: 1;
+		transition: opacity 1s linear;
+	}
+	.animation__coeur:hover .coeur2{
+		opacity: 1;
+		transition: opacity 1 linear;
+	}
+	.coeur{
+		width: 20px;
+		height: 30px;
+		background:linear-gradient(0.47turn,$secondaire,$primaire);
+		border-radius: 10px 10px 0px 0px;
+		transform:rotate(-43deg);
+		position: relative;
+		top:-32px;
+		z-index: 0;
+		opacity: 0;
+
+	}
+	.coeur2{
+		position: relative;
+		width: 20px;
+		height: 12px;
+		background:linear-gradient(0.47turn,$secondaire,$primaire);
+		border-radius: 10px 10px 0px 0px;
+		transform:rotate(45deg);
+		left: 14px;
+		top:-60px;
+		opacity: 0;
+	}	transition: opacity 1s linear;
+	}
+	.animation__coeur:hover .coeur2{
+		opacity: 1;
+		transition: opacity 1 linear;
+	}
+	.coeur{
+		width: 20px;
+		height: 30px;
+		background:linear-gradient(0.47turn,$secondaire,$primaire);
+		border-radius: 10px 10px 0px 0px;
+		transform:rotate(-43deg);
+		position: relative;
+		top:-32px;
+		z-index: 0;
+		opacity: 0;
+
+	}
+	.coeur2{
+		position: relative;
+		width: 20px;
+		height: 12px;
+		background:linear-gradient(0.47turn,$secondaire,$primaire);
+		border-radius: 10px 10px 0px 0px;
+		transform:rotate(45deg);
+		left: 14px;
+		top:-60px;
+		opacity: 0;
+	}
+
+
+
 	&__img{
 		width:100%;
 		height:200px;
@@ -252,15 +315,88 @@ footer{
 .header__flex{
 	@extend %flex-align;
 	justify-content: center;
-	i{
-		position: absolute;
-		top: 20px;
-		left:10px;
-		font-size: 20px;
-		color: black;
-
-	}
 }
+
+.fa-arrow-left{
+	position: absolute;
+	top:20px;
+	left:20px;
+	color: black;
+	font-size: 30px;
+}
+
+
+.animation__coeur:hover .coeur{
+	opacity: 1;
+.animation__coeur:hover .coeur{
+	opacity: 1;
+	transition: opacity 1s linear;
+}
+.animation__coeur:hover .coeur2{
+	opacity: 1;
+	transition: opacity 1 linear;
+}
+.coeur{
+	width: 20px;
+	height: 30px;
+	background:linear-gradient(0.47turn,$secondaire,$primaire);
+	border-radius: 10px 10px 0px 0px;
+	transform:rotate(-43deg);
+	position: relative;
+	top:-32px;
+	z-index: 0;
+	opacity: 0;
+
+}
+.coeur2{
+	position: relative;
+	width: 20px;
+	height: 12px;
+	background:linear-gradient(0.47turn,$secondaire,$primaire);
+	border-radius: 10px 10px 0px 0px;
+	transform:rotate(45deg);
+	left: 14px;
+	top:-60px;
+	opacity: 0;
+}	transition: opacity 1s linear;
+}
+.animation__coeur:hover .coeur2{
+	opacity: 1;
+	transition: opacity 1 linear;
+}
+.coeur{
+	width: 20px;
+	height: 30px;
+	background:linear-gradient(0.47turn,$secondaire,$primaire);
+	border-radius: 10px 10px 0px 0px;
+	transform:rotate(-43deg);
+	position: relative;
+	top:-32px;
+	z-index: 0;
+	opacity: 0;
+
+}
+.coeur2{
+	position: relative;
+	width: 20px;
+	height: 12px;
+	background:linear-gradient(0.47turn,$secondaire,$primaire);
+	border-radius: 10px 10px 0px 0px;
+	transform:rotate(45deg);
+	left: 14px;
+	top:-60px;
+	opacity: 0;
+}
+
+.animation__coeur i{
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+
+
+
+
 .image-fond{
 	width: 100%;
 	height: 400px;

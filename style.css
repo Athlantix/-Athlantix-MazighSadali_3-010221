@@ -193,6 +193,66 @@ body {
   font-size: 30px;
   margin-top: 15px;
 }
+.restaurant .animation__coeur:hover .coeur {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.restaurant .animation__coeur:hover .coeur .animation__coeur:hover .coeur {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.restaurant .animation__coeur:hover .coeur .animation__coeur:hover .coeur2 {
+  opacity: 1;
+  transition: opacity 1 linear;
+}
+.restaurant .animation__coeur:hover .coeur .coeur {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(-43deg);
+  position: relative;
+  top: -32px;
+  z-index: 0;
+  opacity: 0;
+}
+.restaurant .animation__coeur:hover .coeur .coeur2 {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(45deg);
+  left: 14px;
+  top: -60px;
+  opacity: 0;
+}
+.restaurant .animation__coeur:hover .coeur2 {
+  opacity: 1;
+  transition: opacity 1 linear;
+}
+.restaurant .coeur {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(-43deg);
+  position: relative;
+  top: -32px;
+  z-index: 0;
+  opacity: 0;
+}
+.restaurant .coeur2 {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(45deg);
+  left: 14px;
+  top: -60px;
+  opacity: 0;
+}
 .restaurant__img {
   width: 100%;
   height: 200px;
@@ -225,12 +285,82 @@ footer .footer__info-flex p {
 .header__flex {
   justify-content: center;
 }
-.header__flex i {
+
+.fa-arrow-left {
   position: absolute;
   top: 20px;
-  left: 10px;
-  font-size: 20px;
+  left: 20px;
   color: black;
+  font-size: 30px;
+}
+
+.animation__coeur:hover .coeur {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.animation__coeur:hover .coeur .animation__coeur:hover .coeur {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.animation__coeur:hover .coeur .animation__coeur:hover .coeur2 {
+  opacity: 1;
+  transition: opacity 1 linear;
+}
+.animation__coeur:hover .coeur .coeur {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(-43deg);
+  position: relative;
+  top: -32px;
+  z-index: 0;
+  opacity: 0;
+}
+.animation__coeur:hover .coeur .coeur2 {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(45deg);
+  left: 14px;
+  top: -60px;
+  opacity: 0;
+}
+
+.animation__coeur:hover .coeur2 {
+  opacity: 1;
+  transition: opacity 1 linear;
+}
+
+.coeur {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(-43deg);
+  position: relative;
+  top: -32px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.coeur2 {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(45deg);
+  left: 14px;
+  top: -60px;
+  opacity: 0;
+}
+
+.animation__coeur i {
+  margin-top: 30px;
+  font-size: 30px;
 }
 
 .image-fond {
