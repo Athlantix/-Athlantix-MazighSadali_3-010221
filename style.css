@@ -49,7 +49,7 @@ body {
 }
 
 .titre-vignette {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -251,6 +251,7 @@ footer .footer__info-flex p {
 }
 .menu__repas {
   animation: apparition 1s linear;
+  font-size: 14px;
 }
 .menu__resto-titre {
   font-family: "Shrikhand", cursive;
@@ -277,18 +278,59 @@ footer .footer__info-flex p {
     border-bottom: 10 px solid black;
   }
 }
+.menu .prix-slide {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 100px;
+  position: relative;
+  right: -90px;
+  top: -10px;
+  margin-bottom: -50px;
+  margin-left: -50px;
+}
+.menu .slide {
+  width: 120px;
+  height: 125%;
+  position: relative;
+  top: -12px;
+  margin-bottom: -50px;
+  background-color: green;
+}
+.menu .slide i {
+  margin-top: 35px;
+  margin-left: 25px;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+.menu__titre-menu--flex :first-child {
+  margin-bottom: -5px;
+}
 .menu__vignette {
+  overflow: hidden;
   background-color: white;
   border-radius: 15px;
-  line-height: 2px;
-  padding: 5px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
   animation: apparition 1s linear;
+}
+.menu__vignette :hover .prix-slide {
+  animation: bouton-slide 450ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 @media screen and (min-width: 700px) and (max-width: 2000px) {
   .menu__vignette {
     width: 80%;
     margin: 20px;
+    margin-bottom: 45px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -318,6 +360,14 @@ footer .footer__info-flex p {
   100% {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+@keyframes bouton-slide {
+  0% {
+    right: -90px;
+  }
+  100% {
+    right: -10px;
   }
 }
 
