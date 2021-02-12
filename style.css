@@ -146,6 +146,7 @@ body {
   width: 100%;
   background-color: #f7f7f7;
   padding: 30px 0px 30px 0px;
+  transition: opacity 1s linear;
 }
 @media screen and (min-width: 700px) and (max-width: 2000px) {
   .restaurant {
@@ -196,36 +197,6 @@ body {
 .restaurant .animation__coeur:hover .coeur {
   opacity: 1;
   transition: opacity 1s linear;
-}
-.restaurant .animation__coeur:hover .coeur .animation__coeur:hover .coeur {
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.restaurant .animation__coeur:hover .coeur .animation__coeur:hover .coeur2 {
-  opacity: 1;
-  transition: opacity 1 linear;
-}
-.restaurant .animation__coeur:hover .coeur .coeur {
-  width: 20px;
-  height: 30px;
-  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
-  border-radius: 10px 10px 0px 0px;
-  transform: rotate(-43deg);
-  position: relative;
-  top: -32px;
-  z-index: 0;
-  opacity: 0;
-}
-.restaurant .animation__coeur:hover .coeur .coeur2 {
-  position: relative;
-  width: 20px;
-  height: 12px;
-  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
-  border-radius: 10px 10px 0px 0px;
-  transform: rotate(45deg);
-  left: 14px;
-  top: -60px;
-  opacity: 0;
 }
 .restaurant .animation__coeur:hover .coeur2 {
   opacity: 1;
@@ -294,46 +265,6 @@ footer .footer__info-flex p {
   font-size: 30px;
 }
 
-.animation__coeur:hover .coeur {
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.animation__coeur:hover .coeur .animation__coeur:hover .coeur {
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.animation__coeur:hover .coeur .animation__coeur:hover .coeur2 {
-  opacity: 1;
-  transition: opacity 1 linear;
-}
-.animation__coeur:hover .coeur .coeur {
-  width: 20px;
-  height: 30px;
-  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
-  border-radius: 10px 10px 0px 0px;
-  transform: rotate(-43deg);
-  position: relative;
-  top: -32px;
-  z-index: 0;
-  opacity: 0;
-}
-.animation__coeur:hover .coeur .coeur2 {
-  position: relative;
-  width: 20px;
-  height: 12px;
-  background: linear-gradient(0.47turn, #FF79DA, #9356DC);
-  border-radius: 10px 10px 0px 0px;
-  transform: rotate(45deg);
-  left: 14px;
-  top: -60px;
-  opacity: 0;
-}
-
-.animation__coeur:hover .coeur2 {
-  opacity: 1;
-  transition: opacity 1 linear;
-}
-
 .coeur {
   width: 20px;
   height: 30px;
@@ -356,6 +287,16 @@ footer .footer__info-flex p {
   left: 14px;
   top: -60px;
   opacity: 0;
+}
+
+.animation__coeur:hover .coeur {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.animation__coeur:hover .coeur2 {
+  opacity: 1;
+  transition: opacity 1 linear;
 }
 
 .animation__coeur i {
