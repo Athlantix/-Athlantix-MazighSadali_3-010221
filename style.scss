@@ -354,7 +354,7 @@ footer{
 .menu{
 	position: relative;
 	z-index: 1;
-	padding: 20px;
+	padding: 0px;
 	background-color: $fond;
 	border-radius: 20px;
 
@@ -392,19 +392,18 @@ footer{
 		display: flex;
 		align-items: center;
 		width:170px;
-		  height:100px;
+		  height:150px;;
 		  position: relative;
 		  right:-90px;
-		  top:-10px;
 		  margin-bottom:-50px;
 		  margin-left: -50px;
+		  transition: right 400ms ease-in-out;
 	}
 
 	.slide{ 
 		width:120px;
-		  height:125%;
+		  height:135%;
 		  position: relative;	  
-		  top:-12px;
 		  margin-bottom:-50px;
 		background-color:$tertiaire ;
 		i{
@@ -418,7 +417,9 @@ footer{
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			color:$tertiaire;
+			color:$tertiaire;	
+			transform:rotate(100deg);
+			
 		}
 	}
 
@@ -433,15 +434,19 @@ footer{
 		background-color: white;
 		border-radius: 15px;
 	
-		padding: 10px;
+		padding-left: 10px;
 		margin-bottom: 30px;
 		@extend %ombre;
 		animation:apparition 1s linear;
 
 		:hover  .prix-slide{
-			animation: bouton-slide 450ms;
-			animation-fill-mode:forwards;
-			animation-timing-function: linear;
+			transition: right 400ms ease-in-out;
+			right:-1px;
+		}
+
+		:hover  .fa-check{
+			transition: transform 500ms ease-in-out;
+			transform:rotate(0deg);
 		}
 
 		@include media{
@@ -483,9 +488,4 @@ footer{
 	margin-top:100px;}
 	100%{opacity:1;
 	margin-top:0px;}
-}
-
-@keyframes bouton-slide{
- 0%{right:-90px;}
- 100%{right:-10px;}
 }

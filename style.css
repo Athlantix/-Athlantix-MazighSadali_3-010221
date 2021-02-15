@@ -316,7 +316,7 @@ footer .footer__info-flex p {
 .menu {
   position: relative;
   z-index: 1;
-  padding: 20px;
+  padding: 0px;
   background-color: #f7f7f7;
   border-radius: 20px;
 }
@@ -353,18 +353,17 @@ footer .footer__info-flex p {
   display: flex;
   align-items: center;
   width: 170px;
-  height: 100px;
+  height: 150px;
   position: relative;
   right: -90px;
-  top: -10px;
   margin-bottom: -50px;
   margin-left: -50px;
+  transition: right 400ms ease-in-out;
 }
 .menu .slide {
   width: 120px;
-  height: 125%;
+  height: 135%;
   position: relative;
-  top: -12px;
   margin-bottom: -50px;
   background-color: #99E2D0;
 }
@@ -380,6 +379,7 @@ footer .footer__info-flex p {
   align-items: center;
   justify-content: center;
   color: #99E2D0;
+  transform: rotate(100deg);
 }
 .menu__titre-menu--flex :first-child {
   margin-bottom: -5px;
@@ -388,14 +388,17 @@ footer .footer__info-flex p {
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
+  padding-left: 10px;
   margin-bottom: 30px;
   animation: apparition 1s linear;
 }
 .menu__vignette :hover .prix-slide {
-  animation: bouton-slide 450ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  transition: right 400ms ease-in-out;
+  right: -1px;
+}
+.menu__vignette :hover .fa-check {
+  transition: transform 500ms ease-in-out;
+  transform: rotate(0deg);
 }
 @media screen and (min-width: 700px) and (max-width: 2000px) {
   .menu__vignette {
@@ -431,14 +434,6 @@ footer .footer__info-flex p {
   100% {
     opacity: 1;
     margin-top: 0px;
-  }
-}
-@keyframes bouton-slide {
-  0% {
-    right: -90px;
-  }
-  100% {
-    right: -10px;
   }
 }
 
