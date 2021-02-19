@@ -8,6 +8,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
+	animation: body 3s linear;
 }
 
 .loader{
@@ -20,7 +21,9 @@ body{
 	justify-content: center;
 
 	.load{
-			margin-top: 250px;
+			position:fixed;
+			top: 42%;
+			left:45%;
 			width: 100px;
 			height: 100px;
 			border: 10px solid $secondaire;
@@ -31,14 +34,15 @@ body{
 		
 	}
 }
+
+
 @keyframes loader{
 	0%{
-		height: 350%;
+		height: 600%;
 		z-index: 10;
-	
 	}
 	100%{
-		height: 350%;
+		height: 600%;
 		z-index: 10;}
 }
 
