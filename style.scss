@@ -351,45 +351,26 @@ footer{
 
 
 
-.coeur{
-	width: 20px;
-	height: 30px;
-	background:linear-gradient(0.47turn,$secondaire,$primaire);
-	border-radius: 10px 10px 0px 0px;
-	transform:rotate(-43deg);
-	position: relative;
-	top:-32px;
-	z-index: 0;
-	opacity: 0;
 
-}
-.coeur2{
-	position: relative;
-	width: 20px;
-	height: 12px;
-	background:linear-gradient(0.37turn,$secondaire,$primaire);
-	border-radius: 10px 10px 0px 0px;
-	transform:rotate(45deg);
-	left: 14px;
-	top:-60px;
-	opacity: 0;
-}
 
-.animation__coeur:hover .coeur{
-	opacity: 1;
-	transition: opacity 1s linear;
-}
+.menu .fa-heart{
+	font-size:30px;
+	margin-top: 15px;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color:black;
+	color:transparent;
+	margin-right: 20px;
+	
 
-.animation__coeur:hover .coeur2{
-	opacity: 1;
-	transition: opacity 1 linear;
-}
+	&:hover{
 
-.animation__coeur i{
-	margin-top: 30px;
-	font-size: 30px;
+		animation:coeur 400ms linear both; 
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width:0px;
+		  
+	}
 }
-
 
 
 
