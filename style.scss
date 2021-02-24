@@ -199,7 +199,7 @@ body{
 		}
 	}
 	.consigne__flex:hover{
-		background-color: rgb(234, 255, 249);
+		background-color: rgba(147, 86, 220, 0.1);
 		i{
 			color: $primaire;
 		}
@@ -314,6 +314,10 @@ footer{
 	padding: 20px;
 	width: 100%;
 	
+	a{
+		text-decoration: none;
+		list-style: none;
+		color: white;}
 	@include media{
 		display: flex;
 		justify-content: space-around;
@@ -369,12 +373,8 @@ footer{
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width:0px;
-		  
 	}
 }
-
-
-
 
 .image-fond{
 	width: 100%;
@@ -484,9 +484,12 @@ footer{
 			transition: right 400ms ease-in-out;
 			right:-1px;
 		}
-
+		.fa-check{transform:rotate(-90deg);
+				transition: transform 500ms linear;
+			}
 		:hover  .fa-check{
 			transition: transform 500ms ease-in-out;
+			
 			transform:rotate(0deg);
 		}
 

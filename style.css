@@ -181,7 +181,7 @@ body {
   margin-left: 25px;
 }
 .fonctionnement .consigne__flex:hover {
-  background-color: #eafff9;
+  background-color: rgba(147, 86, 220, 0.1);
 }
 .fonctionnement .consigne__flex:hover i {
   color: #9356DC;
@@ -277,6 +277,11 @@ footer {
   color: white;
   padding: 20px;
   width: 100%;
+}
+footer a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
 }
 @media screen and (min-width: 700px) and (max-width: 2000px) {
   footer {
@@ -419,6 +424,10 @@ footer .footer__info-flex p {
 .menu__vignette :hover .prix-slide {
   transition: right 400ms ease-in-out;
   right: -1px;
+}
+.menu__vignette .fa-check {
+  transform: rotate(-90deg);
+  transition: transform 500ms linear;
 }
 .menu__vignette :hover .fa-check {
   transition: transform 500ms ease-in-out;
