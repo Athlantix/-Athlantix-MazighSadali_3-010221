@@ -453,7 +453,7 @@ footer{
 			align-items: center;
 			justify-content: center;
 			color:$tertiaire;	
-			transform:rotate(100deg);
+			transform:rotate(0deg);
 			
 		}
 	}
@@ -484,13 +484,21 @@ footer{
 			transition: right 400ms ease-in-out;
 			right:-1px;
 		}
-		.fa-check{transform:rotate(-90deg);
-				transition: transform 500ms linear;
-			}
+
+
 		:hover  .fa-check{
-			transition: transform 500ms ease-in-out;
+			animation: checkRotation 400ms linear;
 			
-			transform:rotate(0deg);
+		
+			
+		}
+
+		@keyframes checkRotation{
+			from { 
+				transform: rotate(0deg); 
+			} to { 
+				transform: rotate(360deg); 
+			}
 		}
 
 		@include media{
